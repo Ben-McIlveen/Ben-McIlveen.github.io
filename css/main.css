@@ -371,7 +371,7 @@
 
   .work_card_content_type{font-size: 1rem;}
   .work_card_content_heading{font-size: 2rem;}
-  .work_card_content_text{font-size: 0.75rem;}
+  .work_card_content_text{font-size: 0.75rem;text-align: center;}
   
   .footer
   {
