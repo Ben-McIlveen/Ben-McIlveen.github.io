@@ -40,7 +40,7 @@
   body
   {
     /* width: 100%; */
-    height: 100%;
+    /* height: 100%; */
   }
 
   .navbar a
@@ -373,3 +373,47 @@
   .work_card_content_heading{font-size: 2rem;}
   .work_card_content_text{font-size: 0.75rem;}
   
+  .footer
+  {
+    height: 30vh;
+    background: #2A2034;
+  }
+  .footer_wrapper
+  {
+    height: 100%;
+    width: 100%;
+  }
+  .footer_wrappers
+  {
+    margin-top: 2rem;
+    color: white;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer_wrappers p
+  {
+    color: white;
+    font-size: 1.25rem;
+  }
+  .footerheader p
+  {
+    font-size: 2rem;
+    letter-spacing: 0.4em;
+    font-weight: 500;
+  }
+
+  .footer_wrappers li
+  {
+    list-style: none;
+    font-size: 1rem;
+  }
+
+  .footer_wrappers a
+  {
+    text-decoration: none;
+    color:white;
+
+  }
+
