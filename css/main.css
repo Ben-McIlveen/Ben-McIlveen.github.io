@@ -265,6 +265,47 @@
       margin: 0 1% 0 1%;
   }
 
+
+  .skills_header p
+  {
+    letter-spacing: 0.45em;
+    font-weight: 500;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #ecf0f1;
+  }
+
+  .skillslist li
+  {
+    font-weight: 300;
+    list-style: none;
+    color: #ecf0f1;
+    font-size: 1.5rem;
+  }
+
+
+  .listheader
+  {
+    font-weight: 500;
+    letter-spacing: 0.45em;
+  }
+  .learninglist
+  {
+    margin-top: 10%;
+  }
+  .learninglist li
+  {
+    font-weight: 300;
+    list-style: none;
+    color: #bdc3c7;
+    font-size: 1rem;
+  }
+
+  .rainbowbox img
+  {
+    fill: red;
+  }
+
   .work_heading
   {
       font-size: 3rem;
