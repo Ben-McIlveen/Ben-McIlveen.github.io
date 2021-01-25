@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <title>Ben McIlveen</title>
+    <script>
+      $.fn.slideFadeToggle  = function(speed, easing, callback) {
+      return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
+      }; 
+
+      $(document).ready(function(){
+        $("#navsystem").hide(0).slideFadeToggle(500);
+        $("#homepage_content").hide(0).delay(500).slideFadeToggle(700);
+      });
+
+    </script>
+  </head>
+  <body>
+
+    <div class="navigation_wrapper">
+      <a id="section1click" href="#section1end"><div id="navpage_1" class="navigation"></div></a>
+      <a id="section2click" href="#section2end"><div id="navpage_2" class="navigation"></div>
+      <a id="section3click" href="#section3end"><div id="navpage_3" class="navigation"></div>
+      <a id="section4click" href="#section4end"><div id="navpage_4" class="navigation"></div>
+    </div>
+
+    <section id="section1" class="container-fluid scrollsection">
+
+      <nav id="navsystem" class="navbar navbar-expand-lg ml-5">
+        <span class="nav-title"><a class="navbar-brand" href="#">McIlveen</a></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item pr-5 active">
+              <a class="nav-link" href="#section2end">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item pr-5">
+              <a class="nav-link" href="#section3end">Skills</a>
+            </li>
+            <li class="nav-item pr-5">
+              <a class="nav-link" href="#section4end">Work</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="homepage_content_wrapper">
+        <div id="homepage_content">
+          <center>
+            <p>A WEB DEVELOPER THAT PUTS</p>
+            <p><span class="rainbow">DESIGN</span> & <span class="rainbow_r">FUNCTION()</span></p>
+            <p>FIRST</p>
+          </center>
+        </div>
+      </div>
+      <div id="section1end"></div>
+    </section>
+
+    <section id="section2" class="container-fluid scrollsection aboutme sticky">
+      <div class="row fillheight">
+        <div class="col-md-7 d-flex d-flex align-items-center">
+
+          <div id="aboutmeparagraph" >
+            <div id="about_firstline"><p style="font-size: 4rem;">Hi,<br> I'm <span class="rainbow">Ben McIlveen</span></p><br></div>
+            <div id="about_secondline"><p>A <span class="rainbow">Front End Developer</span> from the north west, I’m currently studying <span class="rainbow">computer science</span>.</p></div><br>
+            <div id="about_thirdline"><p>During my spair time, I help businesses turn their online <span class="rainbow">ideas</span> into <span class="rainbow">reality</span>.</p></div>
+          </div>
+
+        </div>
+
+        <div class="col-md-5 d-flex align-items-center justify-content-center">
+          <img id="mepicture" src="assets/me.jpg" alt="" width="50%" max-width="500px">
+        </div> 
+
+      </div>
+      <div id="section2end"></div>
+    </section>
+    <section id="section3" class="container-fluid scrollsection skills sticky2">
+      <center><p class="mt-10"><span class="marker" style="font-size:2rem;">&lth1&gt</span> SKILLS <span class="marker" style="font-size:2rem;">&lt/h1&gt</span></p></center>
+      <div class="row fillheight d-flex align-items-center justify-content-center">
+        <div id="skillsleft" class="col-md-3 rainbowbox">
+
+        </div>
+        
+        <div id="skillsmiddle" class="col-md-3 rainbowbox">
+
+        </div>
+        <div id="skillsright" class="col-md-3 rainbowbox">
+
+        </div>
+      </div>
+      <div id="section3end"></div>
+    </section>
+    <section id="section4" class="container-fluid scrollsection work sticky3">
+      <center class="mt-5"><span class="rainbow_r"><p class="mt-10"><span class="marker" style="font-size:2rem;">&lth1&gt</span> <span class="work_heading">Work</span> <span class="marker" style="font-size:2rem;">&lt/h1&gt</span></p></span></center>
+      <div class="row fillheight workrow d-flex align-items-center justify-content-center">
+        <div class="work_cards_wrapper d-flex align-items-center justify-content-center">
+          <div class="work_card">
+            <div class="work_card_image" style="background-image: url('assets/mazig.PNG');"></div>
+            <div class="work_card_content d-flex align-items-center justify-content-start flex-column">
+              <span class="work_card_content_type"><p>Website</p></span>
+              <span class="work_card_content_heading"><p>Mazig Barbers</p></span>
+              <span class="work_card_content_text"><p>Text about each project goes here. Little bit infomation. Text about each project goes here. Little bit infomation. Text about each project goes here. Little bit infomation. Text about each project goes here. Little bit infomation.</p></span>
+            </div>
+          </div>
+          <div class="work_card">
+            <div class="work_card_image" style="background-image: url('assets/aiforgood.PNG');"></div>
+            <div class="work_card_content d-flex align-items-center justify-content-start flex-column">
+              <span class="work_card_content_type"><p>Website  UI/UX</p></span>
+              <span class="work_card_content_heading"><p>AI For Good</p></span>
+              <span class="work_card_content_text"><p>Text about each project goes here. Little bit infomation. Text about each project goes here. Little bit infomation. Text about each project goes here. Little bit infomation. Text about each project goes here. Little bit infomation.</p></span>
+            </div>
+          </div>
+          <div class="work_card">
+            <div class="work_card_image" style="background-image: url('assets/benjamin henry.png');"></div>
+            <div class="work_card_content d-flex align-items-center justify-content-start flex-column">
+              <span class="work_card_content_type"><p>Graphic Design</p></span>
+              <span class="work_card_content_heading"><p>Benjamin Henry</p></span>
+              <span class="work_card_content_text"><p>Text about each project goes here. Little bit infomation. Text about each project goes here. Little bit infomation. Text about each project goes here. Little bit infomation. Text about each project goes here. Little bit infomation.</p></span>
+            </div>
+          </div>
+          <div class="work_card">
+            <div class="work_card_image" style="background-image: url('assets/Statboard.png');"></div>
+            <div class="work_card_content d-flex align-items-center justify-content-start flex-column">
+              <span class="work_card_content_type"><p>Web Application and Product</p></span>
+              <span class="work_card_content_heading"><p>StatBoard</p></span>
+              <span class="work_card_content_text"><p>Text about each project goes here. Little bit infomation. Text about each project goes here. Little bit infomation. Text about each project goes here. Little bit infomation. Text about each project goes here. Little bit infomation.</p></span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    <div id="section4end"></div>
+    </section>
+
+  <script src="js/scrollingpannel.js">
+  </script>
+</html>
