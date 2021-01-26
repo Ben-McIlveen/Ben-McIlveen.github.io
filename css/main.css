@@ -42,7 +42,17 @@
     /* width: 100%; */
     /* height: 100%; */
   }
-
+  .static
+  {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 9999;
+    background-image: url('https://media.tenor.com/images/e1bcea33bbe3e15d64af98327b3771f4/tenor.gif');
+    background-size: 200px;
+    background-repeat: repeat;
+    opacity: 0.03;
+  }
   .navbar a
   {
       color: #C04941 ;
@@ -199,7 +209,7 @@
 
   .aboutme
   {
-      background-color: #D7A8A5;
+      background-color: #fff1e1;
   }
   .skills
   {
@@ -207,7 +217,7 @@
   }
   .work
   {
-    background-color: #D7A8A5;
+    background-color: #fff1e1;
   }
   
   #homepage_content_wrapper
